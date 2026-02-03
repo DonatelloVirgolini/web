@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida - Mundo Motor</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 320px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #222;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bienvenido a Mundo Motor</h1>
+
+        <label for="marca">Selecciona tu marca favorita:</label>
+        <select id="marca">
+            <option value="">-- Elige una opción --</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="toyota">Toyota</option>
+        </select>
+
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" placeholder="Escribe aquí...">
+
+        <button>Entrar</button>
+    </div>
+</body>
+</html>
+
